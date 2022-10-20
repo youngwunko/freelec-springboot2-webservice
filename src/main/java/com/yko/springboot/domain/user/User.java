@@ -36,9 +36,11 @@ public class User {
         this.role = role;
     }
 
-    public User update(String name, String email) {
+    public User update(String name, String picture) {
         this.name = name;
-        this.email = email;
+        this.picture = picture;
+
+        return this;
     }
 
     public String getRoleKey() {
